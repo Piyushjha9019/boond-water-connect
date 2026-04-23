@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { MapPin, Upload, Droplets } from "lucide-react";
+import { MapPin, Upload, Droplets, LogIn, UserPlus } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "@/components/ThemeToggle";
 import heroImage from "@/assets/onboarding-hero.jpg";
 import logo from "@/assets/boond-logo.png";
 
@@ -19,6 +20,9 @@ const Onboarding = () => {
       <div className="relative h-56 overflow-hidden">
         <img src={heroImage} alt="Water harvesting landscape" className="w-full h-full object-cover" width={800} height={600} />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
+        <div className="absolute top-4 right-4 z-10">
+          <ThemeToggle />
+        </div>
       </div>
 
       <div className="flex-1 flex flex-col items-center px-6 -mt-8 relative z-10">
@@ -76,7 +80,7 @@ const Onboarding = () => {
           </button>
         </div>
 
-        <div className="w-full max-w-sm mt-auto pb-8 pt-6">
+        <div className="w-full max-w-sm mt-auto pb-8 pt-6 space-y-3">
           <Button
             onClick={() => navigate("/dashboard")}
             className="w-full h-14 text-base font-semibold gradient-primary text-primary-foreground rounded-xl shadow-elevated"
@@ -85,6 +89,25 @@ const Onboarding = () => {
             <Droplets className="mr-2" size={20} />
             Get Started / शुरू करें
           </Button>
+
+          <div className="flex gap-3">
+            <Button
+              onClick={() => navigate("/dashboard")}
+              variant="outline"
+              className="flex-1 h-12 rounded-xl font-semibold"
+            >
+              <LogIn size={18} />
+              Sign In
+            </Button>
+            <Button
+              onClick={() => navigate("/dashboard")}
+              variant="outline"
+              className="flex-1 h-12 rounded-xl font-semibold"
+            >
+              <UserPlus size={18} />
+              Sign Up
+            </Button>
+          </div>
         </div>
       </div>
     </div>

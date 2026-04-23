@@ -6,11 +6,9 @@ import {
   CloudRain,
   Wrench,
   Droplets,
-  LogIn,
-  UserPlus,
 } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
-import { Button } from "@/components/ui/button";
+import ThemeToggle from "@/components/ThemeToggle";
 import logo from "@/assets/boond-logo.png";
 import rainBg from "@/assets/boond-rain-bg.jpg";
 
@@ -42,26 +40,7 @@ const Dashboard = () => {
               <p className="text-xs text-primary-foreground/80">Smart Water Platform</p>
             </div>
           </div>
-          <Droplets className="text-primary-foreground/60" size={28} />
-        </div>
-
-        {/* Auth buttons */}
-        <div className="mt-5 flex gap-2 max-w-lg mx-auto">
-          <Button
-            onClick={() => navigate("/signin")}
-            className="flex-1 bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold"
-          >
-            <LogIn size={18} />
-            Sign In
-          </Button>
-          <Button
-            onClick={() => navigate("/signup")}
-            variant="outline"
-            className="flex-1 bg-transparent border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground font-semibold"
-          >
-            <UserPlus size={18} />
-            Sign Up
-          </Button>
+          <ThemeToggle />
         </div>
 
         <div className="mt-4 bg-primary-foreground/15 rounded-2xl p-4 max-w-lg mx-auto backdrop-blur-sm">
