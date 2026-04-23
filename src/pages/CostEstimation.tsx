@@ -51,8 +51,8 @@ const CostEstimation = () => {
         <div className="flex items-center gap-3 p-4 rounded-xl bg-success/5 border border-success/20">
           <MapPin size={18} className="text-success" />
           <div>
-            <p className="text-sm font-medium text-foreground">Auto-detected: Jaipur, Rajasthan</p>
-            <p className="text-xs text-muted-foreground">स्थान: जयपुर, राजस्थान</p>
+            <p className="text-sm font-medium text-foreground">Auto-detected: Solan, Himanchal Pradesh</p>
+            <p className="text-xs text-muted-foreground">स्थान: सोलन, हिमाचल प्रदेश</p>
           </div>
         </div>
 
