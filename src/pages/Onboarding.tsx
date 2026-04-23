@@ -92,7 +92,7 @@ const Onboarding = () => {
 
           <div className="flex gap-3">
             <Button
-              onClick={() => navigate("/dashboard")}
+              onClick={() => navigate("/signin")}
               variant="outline"
               className="flex-1 h-12 rounded-xl font-semibold"
             >
@@ -100,7 +100,7 @@ const Onboarding = () => {
               Sign In
             </Button>
             <Button
-              onClick={() => navigate("/dashboard")}
+              onClick={() => navigate("/signup")}
               variant="outline"
               className="flex-1 h-12 rounded-xl font-semibold"
             >
