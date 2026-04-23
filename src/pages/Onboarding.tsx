@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { MapPin, Upload, Droplets } from "lucide-react";
+import { MapPin, Upload, Droplets, LogIn, UserPlus } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "@/components/ThemeToggle";
 import heroImage from "@/assets/onboarding-hero.jpg";
 import logo from "@/assets/boond-logo.png";
 
