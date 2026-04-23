@@ -6,9 +6,13 @@ import {
   CloudRain,
   Wrench,
   Droplets,
+  LogIn,
+  UserPlus,
 } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
+import { Button } from "@/components/ui/button";
 import logo from "@/assets/boond-logo.png";
+import rainBg from "@/assets/boond-rain-bg.jpg";
 
 const cards = [
   { icon: Calculator, label: "Estimate Cost", labelHi: "लागत अनुमान", path: "/cost", color: "bg-primary/10 text-primary" },
@@ -24,7 +28,12 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-background pb-20">
       {/* Header */}
-      <div className="gradient-primary px-5 pt-6 pb-10 rounded-b-3xl">
+      <div
+        className="relative px-5 pt-6 pb-10 rounded-b-3xl overflow-hidden bg-cover bg-center"
+        style={{ backgroundImage: `url(${rainBg})` }}
+      >
+        <div className="absolute inset-0 gradient-primary opacity-80" aria-hidden="true" />
+        <div className="relative">
         <div className="flex items-center justify-between max-w-lg mx-auto">
           <div className="flex items-center gap-3">
             <img src={logo} alt="Boond" width={40} height={40} className="rounded-xl" />
@@ -36,13 +45,33 @@ const Dashboard = () => {
           <Droplets className="text-primary-foreground/60" size={28} />
         </div>
 
-        <div className="mt-5 bg-primary-foreground/15 rounded-2xl p-4 max-w-lg mx-auto backdrop-blur-sm">
+        {/* Auth buttons */}
+        <div className="mt-5 flex gap-2 max-w-lg mx-auto">
+          <Button
+            onClick={() => navigate("/signin")}
+            className="flex-1 bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold"
+          >
+            <LogIn size={18} />
+            Sign In
+          </Button>
+          <Button
+            onClick={() => navigate("/signup")}
+            variant="outline"
+            className="flex-1 bg-transparent border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground font-semibold"
+          >
+            <UserPlus size={18} />
+            Sign Up
+          </Button>
+        </div>
+
+        <div className="mt-4 bg-primary-foreground/15 rounded-2xl p-4 max-w-lg mx-auto backdrop-blur-sm">
           <p className="text-sm font-medium text-primary-foreground">
             🌧️ Rainfall in your area: <span className="font-bold">Medium</span>
           </p>
           <p className="text-xs text-primary-foreground/70 mt-1">
             Water harvesting recommended • जल संचयन अनुशंसित
           </p>
+        </div>
         </div>
       </div>
 
