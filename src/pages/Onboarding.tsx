@@ -82,7 +82,7 @@ const Onboarding = () => {
 
         <div className="w-full max-w-sm mt-auto pb-8 pt-6 space-y-3">
           <Button
-            onClick={() => navigate("/dashboard")}
+            onClick={() => navigate("/signin")}
             className="w-full h-14 text-base font-semibold gradient-primary text-primary-foreground rounded-xl shadow-elevated"
             size="lg"
           >

@@ -118,12 +118,12 @@ const SignIn = () => {
           )}
 
           <Button
-            onClick={otpSent ? verifyOtp : sendOtp}
+            onClick={() => navigate("/dashboard")}
             disabled={loading}
             className="w-full h-12 text-base font-semibold gradient-primary text-primary-foreground rounded-xl shadow-elevated"
           >
             <Droplets size={18} />
-            {loading ? "Please wait…" : otpSent ? "Verify & Sign In" : "Send OTP"}
+            Login
           </Button>
 
           {otpSent && (
