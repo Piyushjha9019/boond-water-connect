@@ -6,11 +6,9 @@ import {
   CloudRain,
   Wrench,
   Droplets,
-  LogIn,
-  UserPlus,
 } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
-import { Button } from "@/components/ui/button";
+import ThemeToggle from "@/components/ThemeToggle";
 import logo from "@/assets/boond-logo.png";
 import rainBg from "@/assets/boond-rain-bg.jpg";
 
