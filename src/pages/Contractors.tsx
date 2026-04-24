@@ -1,4 +1,4 @@
-import { Star, Phone, MapPin } from "lucide-react";
+import { Star, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import PageHeader from "@/components/PageHeader";
 import BottomNav from "@/components/BottomNav";
