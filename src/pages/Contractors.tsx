@@ -50,8 +50,7 @@ const Contractors = () => {
             <div className="flex items-center justify-between mt-3 pt-3 border-t border-border">
               <p className="text-sm font-bold text-primary">{c.price}</p>
               <Button size="sm" className="h-9 rounded-xl gradient-primary text-primary-foreground text-xs">
-                <Phone size={14} className="mr-1" />
-                Contact
+                Message
               </Button>
             </div>
           </div>
