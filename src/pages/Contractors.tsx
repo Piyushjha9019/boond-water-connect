@@ -4,11 +4,11 @@ import PageHeader from "@/components/PageHeader";
 import BottomNav from "@/components/BottomNav";
 
 const contractors = [
-  { name: "Rajesh Kumar", location: "Jaipur", rating: 4.5, jobs: 120, price: "₹15,000 – ₹50,000", specialty: "Rooftop Systems" },
-  { name: "Sunil Sharma", location: "Jodhpur", rating: 4.2, jobs: 85, price: "₹20,000 – ₹70,000", specialty: "Recharge Pits" },
-  { name: "Priya Singh", location: "Udaipur", rating: 4.8, jobs: 200, price: "₹10,000 – ₹40,000", specialty: "Storage Tanks" },
-  { name: "Amit Verma", location: "Ajmer", rating: 4.0, jobs: 65, price: "₹25,000 – ₹60,000", specialty: "Complete Solutions" },
-  { name: "Deepa Meena", location: "Kota", rating: 4.6, jobs: 150, price: "₹18,000 – ₹55,000", specialty: "Rooftop + Storage" },
+  { name: "Rajesh Kumar", location: "Solan, HP", rating: 4.5, jobs: 120, price: "₹15,000 – ₹50,000", specialty: "Rooftop Systems" },
+  { name: "Sunil Sharma", location: "Kasauli, Solan", rating: 4.2, jobs: 85, price: "₹20,000 – ₹70,000", specialty: "Recharge Pits" },
+  { name: "Priya Singh", location: "Nalagarh, Solan", rating: 4.8, jobs: 200, price: "₹10,000 – ₹40,000", specialty: "Storage Tanks" },
+  { name: "Amit Verma", location: "Arki, Solan", rating: 4.0, jobs: 65, price: "₹25,000 – ₹60,000", specialty: "Complete Solutions" },
+  { name: "Deepa Meena", location: "Parwanoo, Solan", rating: 4.6, jobs: 150, price: "₹18,000 – ₹55,000", specialty: "Rooftop + Storage" },
 ];
 
 const Contractors = () => {
